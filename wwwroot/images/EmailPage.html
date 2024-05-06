@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            align: center;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <table align=center>
+        <tr>
+            <td>Hi,  #UserName </td>
+        </tr>
+        <tr>
+            <td>Your Payment is</td>
+            <td><strong>Rs.  #Paymentdata.Amount  </strong></td>
+        </tr>
+        <tr>
+            <td>Validity:</td>
+            <td><strong>  #Paymentdata.Validity  </strong>.</td>
+        </tr>
+    </table>
+    <table align=center>
+        <tr>
+            <td>
+                <p>Now you are the member of News App.</p>
+                <p>Now,You can add your own News.</p>
+                <p>Your Membership will be expire on<strong>   #Paymentdata.Validity </strong></p>
+                <p>Read more about it on <a href='https://www.google.com'>About Newss App</a> page.</p>
+                <p>Thank You</p>
+            </td>
+
+        </tr>
+    </table>
+</body>
+</html>
